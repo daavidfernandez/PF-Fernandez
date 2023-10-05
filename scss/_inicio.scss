@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Ablation';
+    src: url(../fonts/Ablation_PersonalUse.otf);
+}
+
+body{
+    background-color:$bg-body1
+}
+
+/* HEADER */
+header{
+    background-color:$header-color;
+    display: flex;
+    position: sticky;
+    top: 0;
+
+    img {
+        height: 70px;
+        width: 250px;  }
+}
+
+header a{
+            font-family: 'Ablation', sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            color: $font-color;
+        }
+
+ul{
+    list-style-type: none;
+}
+
+.navbar-brand{
+    padding-left: 30px;
+}
+
+.navbar-collapse{
+    justify-content:end;
+    padding-right: 30px;
+}
+
+.navbar-collapse li{
+    row-gap: 20px;
+}
+
+.navbar{
+    background-color:$header-color;
+   width: 100%;
+}
+
+.nav-link{
+color: $font-color;
+font-weight: 300;
+}
+
+.navbar-toggler{
+    color: $font-color 
+}
+
+img{
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+#footer{
+    background-color: $footer-color;
+    margin-top: 20px;
+}
+
+.pie{
+    @include flex-column-center;
+    align-items: center;
+    color: $font-color;
+
+    a{
+    list-style-type: none;
+    text-decoration: none;
+    color: $font-color;
+    }
+}    
+
+@media (max-width:768px){
+    .pie{
+        padding-bottom: 15px;
+    }
+}
+
+.lista-footer{
+    font-family: 'ablation', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.lista-footer li{
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .lista-footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        gap:30px;
+    }
+}
+
+@media (max-width:520px){
+    .lista-footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+}
+
+.redes-sociales{
+    font-family: $fuente-principal;
+    font-weight: 200;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width:520px){
+    .redes-sociales{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content:center;
+        gap: 30px;
+    }
+}
+
+.direccion{
+    font-family: $fuente-principal;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 10px;
+        
+        a{
+         text-decoration: none;
+         color: $font-color;
+        }
+}
+
+.derechos{
+    font-family: $fuente-principal;
+    font-weight: 200;
+    text-align: left;
+    padding-top: 10px;
+
+
+        p{
+        color: $font-color;
+        }
+    }
+
+
+/* NUEVO INDEX */
+/* BANNER PRINCIPAL */
+.banner{
+    background-image: url(../img/casa1.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+   @include flex-column-center;
+    align-items: start;
+         
+        h1{
+            font-family: $fuente-principal;
+            font-weight:500;
+            color: #001523;
+            text-align: center;
+            background-color: #c5c0c07c;
+}
+}
+
+.intro{
+    color: $font-color;
+    font-family: $fuente-principal;
+    font-weight: 400;
+    text-align: center;
+    font-weight: normal;
+    padding: 60px 60px 60px 60px;
+}
+
+.padre-index{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.fade-right{
+    z-index: -1;
+}
+    
+
+
+@media (max-width:768px){
+    .padre-index{
+        display: grid;
+    }
+}
+
+.index-pag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    background-color: #001a2c;
+    color: $font-color;
+    font-family: $fuente-principal;
+    font-weight: 200;
+
+         h3 {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              font-family: $fuente-principal;
+              font-weight: 500;
+              margin-bottom: 30px;
+            }
+}
+            
+.index-pag img{
+                width: 400px;
+                height: 300px;
+             }
+
+
+@media (max-width:520px){
+    .index-pag{
+        display: grid;
+        grid-template-rows: 1,1fr;
+        justify-items: center;
+        padding-right: 0px;
+        
+    }
+} 
+@media (max-width:768px){
+    .index-pag img{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+.parrafo-index{
+   padding-left: 30px;
+   padding-right: 30px;
+}
