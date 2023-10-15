@@ -18,3 +18,20 @@ $titulo-fuente: "Montserrat", sans-serif 300;
     
 }
 
+@mixin titulos {
+	padding: 80px 80px 80px 80px;
+	margin-bottom: 0px;
+    font-family: $fuente-principal;
+    font-weight: 300;
+    color: $font-color;
+	p{
+		padding-left: 40px;
+	
+		 small{
+			 color:#94b6e9b3;
+			 font-size: 20px;
+			 font-weight: 500;
+			}
+
+}
+}

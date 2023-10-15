@@ -1,12 +1,5 @@
 .titulo-serv{
-    padding: 80px 80px 80px 80px;
-    font-family: $fuente-principal;
-    font-weight: 300;
-    color: $font-color;
-}
-
-.text-muted{
-    color: rgba(237, 242, 251, 0.9019607843);
+   @include titulos
 }
 
 .servicios{
@@ -24,7 +17,7 @@
 #lista-servicios{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 50px;
     justify-items: center;
     padding: 70px;
     background-color: $bg-body2;
@@ -73,7 +66,9 @@
     }
 }
 .cajas-serv{
-    @include flex-column-center
+    @include flex-column-center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 

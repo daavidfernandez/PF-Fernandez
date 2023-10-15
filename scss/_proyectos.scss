@@ -1,15 +1,7 @@
 .titulo-proy{
-    padding: 80px 80px 80px 80px;
-    font-family: $fuente-principal;
-    font-weight: 300;
-    color: $font-color;
-
+   @include titulos
 }
 
-small{
-    color: rgba(237, 242, 251, 0.689) !important;
-
-}
 .container-cards {
    @include flex-column-center;
     align-items: center;
@@ -31,38 +23,41 @@ small{
 }
 .card {
     max-width: 100%;
-    z-index: -1;
+    z-index: 1;
     background-color: $bg-body2;
+    
     p{
         color: $font-color2;
     }
 }
 
 .card {
-    transition: all 0.8s;
+    transition: all 0.5s;
 
     &:hover {
-            transform: scale(1.2,1.2);
+            transform: scale(1.1,1.1);
         }
   }
         
-
 
 .card-img-top {
     height: 300px;
 }
 
-.casas{
+#casas{
+    background-color: $bg-body2;
+    padding-top: 20px;
+    padding-bottom: 30px;
     h3{
         font-family: 'Montserrat',sans-serif;
         font-weight: 400;
         color: $font-color;
         margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-left: 30px;}
 }
 
-.casas{
+#casas{
      iframe{
         display: flex;
         padding-top: 20px;
@@ -71,20 +66,22 @@ small{
 }
 
 
-.edificios{
-    margin-top: 10px;
+#edificios{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: $bg-body1;
 
     h3{
         font-family: 'Montserrat',sans-serif;
         font-weight: 400;
         color: $font-color;
         margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-left: 30px;
     }
 }
 
-.edificios{
+#edificios{
     iframe{
             display: flex;
             padding-top: 20px;
@@ -92,17 +89,18 @@ small{
         }
 } 
 
-.oficinas{
-    margin-top: 10px; 
-    margin-bottom: 70px;
+#oficinas{
+   padding-top: 20px;
+   padding-bottom: 30px;
+   background-color: $bg-body2;
 
     h3{
         font-family: 'Montserrat',sans-serif;
         font-weight: 400;
         color: $font-color;
-        margin-top: 30px;
-        margin-bottom: 10px;
         margin-left: 30px;
+        padding-bottom: 30px;
     }
 
 }
+

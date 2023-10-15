@@ -12,12 +12,17 @@ body{
     background-color:$bg-body1
 }
 
+a{
+    text-decoration: none;
+}
+
 /* HEADER */
 header{
     background-color:$header-color;
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 2;
 
     img {
         height: 70px;
@@ -60,6 +65,11 @@ font-weight: 300;
 
 .navbar-toggler{
     color: $font-color 
+}
+
+.navbar-toggler-icon{
+    background-color: $font-color;
+    border-radius: 5px;
 }
 
 img{
@@ -160,10 +170,12 @@ img{
     font-weight: 200;
     text-align: left;
     padding-top: 10px;
+    padding-left: 10px;
 
 
         p{
         color: $font-color;
+        margin-bottom: 0px;
         }
     }
 
@@ -203,10 +215,7 @@ img{
     flex-direction: column;
     gap: 30px;
 }
-.fade-right{
-    z-index: -1;
-}
-    
+
 
 
 @media (max-width:768px){
@@ -219,14 +228,15 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
-    background-color: #001a2c;
     color: $font-color;
     font-family: $fuente-principal;
     font-weight: 200;
+    background-color: $bg-body2;
+  
+    
 
          h3 {
               display: flex;
@@ -235,9 +245,26 @@ img{
               font-family: $fuente-principal;
               font-weight: 500;
               margin-bottom: 30px;
+            
             }
 }
-            
+
+.enlace-index{
+    text-decoration: none;
+}
+
+.i--proy{
+    @extend .index-pag;
+    background-color: $bg-body1;
+
+}
+
+.i--serv{
+    @extend .index-pag;
+    background-color: $bg-body2;
+
+}
+
 .index-pag img{
                 width: 400px;
                 height: 300px;

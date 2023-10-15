@@ -1,14 +1,7 @@
 .titulo-nos {
-    padding: 80px 80px 80px 80px;
-    font-family: "Montserrat", sans-serif;
-    font-weight:300;
-    color: $font-color;
-   
+    @include titulos
 }
 
-.text-muted{
-    color: rgba(237, 242, 251, 0.9019607843) ;
-}
 .banner-nos{
     background-image: url(../img/nos-banner.jpg);
     background-repeat: no-repeat;
@@ -106,8 +99,8 @@
     font-weight: 300;
 }
 
-.equipo h5{
-    font-weight: 400;
+.equipo h4{
+    font-weight: 300;
     padding-left: 60px;
 }
 

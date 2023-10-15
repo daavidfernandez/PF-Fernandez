@@ -1,14 +1,7 @@
 .titulo-cont{
-    padding: 80px 80px 80px 80px;
-    font-family: $fuente-principal;
-    font-weight: 300;
-    color: $font-color;
-
+   @include titulos
 }
 
-.text-muted{
-    color: rgba(237, 242, 251, 0.9019607843);
-}
 
 .iframe iframe{
     width:100%;
@@ -22,8 +15,10 @@
     color: $font-color;
     font-weight: 300;
 
+   
+
     h3{
-    
+        padding-top: 10px;
         padding-left: 30px;
     }
 
@@ -32,13 +27,21 @@
 .formulario{
     font-family: 'Montserrat',sans-serif;
     font-weight: 300;
-    height: 400px;
-    width: 600px;
     margin: 30px 30px 30px 30px;
+    padding-top: 30px;
+    width: fit-content;
 }
+
+
 
 label{
     color: $font-color;
     margin-right: 20px;
+}
+.form-label{
+    padding-top: 5px;
+}
+.boton-form{
+    padding-top: 10px;
 }
 
